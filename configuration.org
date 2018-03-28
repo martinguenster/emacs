@@ -1,0 +1,5 @@
+* UI
+** /menubar/ ausschalten
+#+BEGIN_SRC emacs-lisp
+(menu-bar-mode -1)
+#+END_SRC
