@@ -1,3 +1,24 @@
+* use-package
+#+BEGIN_SRC emacs-lisp
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  ;; Following line is not needed if use-package.el is in ~/.emacs.d
+  (add-to-list 'load-path "~/.emacs.d/packages")
+  (require 'use-package))
+
+#+END_SRC
+  
+
 * UI
 ** /menubar/, /toolbar/ und /scrollbar/ ausschalten
 #+BEGIN_SRC emacs-lisp
@@ -5,3 +26,13 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 #+END_SRC
+
+** /theme/ laden
+#+BEGIN_SRC emacs-lisp
+(use-package spacemacs-common
+    :ensure spacemacs-theme
+    :config (load-theme 'spacemacs-dark t))
+;;(load-theme 'leuven)
+#+END_SRC
+
+
