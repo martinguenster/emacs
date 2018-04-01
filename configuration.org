@@ -18,7 +18,11 @@
 
 #+END_SRC
   
-
+* Backups und Autosave
+#+BEGIN_SRC emacs-lisp
+(setq make-backup-files nil) ; stop creating backup~ files
+(setq auto-save-default nil) ; stop creating #autosave# files
+#+END_SRC
 * UI
 ** /menubar/, /toolbar/ und /scrollbar/ ausschalten
 #+BEGIN_SRC emacs-lisp
@@ -32,7 +36,6 @@
 (use-package spacemacs-common
     :ensure spacemacs-theme
     :config (load-theme 'spacemacs-dark t))
-;;(load-theme 'leuven)
 #+END_SRC
 
 
