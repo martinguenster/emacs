@@ -1,0 +1,6 @@
+* Installation
+
+#+BEGIN_SRC sh
+git clone https://github.com/martinguenster/emacs.git .emacs.d
+#+END_SRC
+
