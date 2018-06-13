@@ -17,14 +17,6 @@
 #+END_SRC
 * Org-Babel
 #+BEGIN_SRC emacs-lisp
-    (org-babel-do-load-languages
-     'org-babel-load-languages
-     '((emacs-lisp . t)
-       (sh . t)
-      )
-    )
-#+END_SRC
-#+BEGIN_SRC emacs-lisp
 (use-package org
   :ensure t
   :defer t
@@ -37,10 +29,6 @@
     )
 )
 #+END_SRC
-
-#+RESULTS:
-
-
 * Shell
 #+BEGIN_SRC emacs-lisp
 (use-package shell
