@@ -29,6 +29,16 @@
     )
 )
 #+END_SRC
+* YAML
+#+BEGIN_SRC emacs-lisp
+(use-package yaml-mode
+  :ensure t
+  :init
+)
+#+END_SRC
+
+#+RESULTS:
+
 * Shell
 #+BEGIN_SRC emacs-lisp
 (use-package shell
