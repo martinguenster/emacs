@@ -66,6 +66,14 @@
 (scroll-bar-mode -1)
 #+END_SRC
 
+** /hl-line/
+#+BEGIN_SRC emacs-lisp
+(global-hl-line-mode +1)
+#+END_SRC
+
+#+RESULTS:
+: t
+
 ** /theme/ laden
 #+BEGIN_SRC emacs-lisp
 (use-package dracula-theme
