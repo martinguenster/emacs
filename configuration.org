@@ -90,6 +90,9 @@
 (use-package solarized-theme
   :init (load-theme 'solarized-dark t)
   :ensure t)
+(use-package spacemacs-theme
+  :defer t
+  :init (load-theme 'spacemacs-light t))
 #+END_SRC
 
 #+RESULTS:
