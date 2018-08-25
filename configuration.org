@@ -57,8 +57,13 @@
 #+BEGIN_SRC emacs-lisp
 (use-package magit
   :ensure t
+  :bind (("C-x g" . magit-status))
   :init)
 #+END_SRC
+
+#+RESULTS:
+: magit-status
+
 * Backups und Autosave
 #+BEGIN_SRC emacs-lisp
 (setq make-backup-files nil) ; stop creating backup~ files
