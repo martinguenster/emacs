@@ -82,9 +82,12 @@
 
 ** /theme/ laden
 #+BEGIN_SRC emacs-lisp
-(use-package dracula-theme
-  :init (load-theme 'dracula t)
+(use-package solarized-theme
+  :init (load-theme 'solarized-dark t)
   :ensure t)
 #+END_SRC
 
+#+RESULTS:
+
+   
    
